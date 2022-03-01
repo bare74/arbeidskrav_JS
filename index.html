@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handleliste</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    
+    <div class="header">
+      <h2>Din handle liste !</h2>
+    </div>
+    <h3 class="main-txt">Dette har du:</h3>
+    <div class="main-container">
+      <input type="text" id="input" placeholder="Skriv her..." />
+      <input type="number" id="inputNr" placeholder="pris..." />
+      <span onclick="addShopList()" class="btn1">Legg til</span>
+    </div>
+    <ul id="shop-list"></ul>
+    <h4 id="sum"></h4>
+    
+
+    <div class="header1"></div>
+    <h3 class="main-txt">Dette begynner og bli tomt:</h3>
+    <div class="main-container1">
+      <input type="text" id="input1" placeholder="Skriv her..." />
+      <input type="number" id="inputNr1" placeholder="pris..." />
+      <span onclick="addShopList1()" class="btn1">Legg til</span>
+    </div>
+    <ul id="shop-list1"></ul>
+    <h4 id="sum1"></h4>
+
+    <div class="header2"></div>
+    <h3 class="main-txt">Kjøp mere av dette:</h3>
+    <div class="main-container2">
+      <input type="text" id="input2" placeholder="Skriv her..." />
+      <input type="number" id="inputNr2" placeholder="pris..." />
+      <span onclick="addShopList2()" class="btn1">Legg til</span>
+    </div>
+    <ul id="shop-list2"></ul>
+    <h4 id="sum2"></h4>
+
+    <script src="./Javascript/index.js"></script>
+  </body>
+</html>
