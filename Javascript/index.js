@@ -21,7 +21,7 @@ function addShopList() {
       price: price,
     });
   }
-  console.log("DETTE ER FØRSTE", shopArray);
+
   listshop();
   calculatePrice();
 }
@@ -32,7 +32,6 @@ function calculatePrice() {
     return (Number(prev) || 0) + (Number(curr) || 0);
   });
 
-  console.log(priceArray);
   document.getElementById("sum").innerHTML = "Totalt kr:" + sum + ",-"; //Kalkulator legge sammen summene
 }
 
@@ -56,7 +55,7 @@ function deleteshop(i) {
       return (Number(prev) || 0) + (Number(curr) || 0);
     });
 
-    document.getElementById("sum").innerHTML = "Totalt kr:" + sum + ",-"; //Oppdatere pris ved sletting
+    document.getElementById("sum").innerHTML = "Totalt kr: " + sum + ",-"; //Oppdatere pris ved sletting
   }
 }
 //Handlekurv 2
@@ -84,7 +83,7 @@ function calculatePrice1() {
     return (Number(prev) || 0) + (Number(curr) || 0);
   });
 
-  document.getElementById("sum1").innerHTML = "Totalt kr:" + sum1 + ",-"; //Kalkulator legge sammen summene
+  document.getElementById("sum1").innerHTML = "Totalt kr: " + sum1 + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop1() {
@@ -106,7 +105,7 @@ function deleteshop1(i) {
       return (Number(prev) || 0) + (Number(curr) || 0);
     });
 
-    document.getElementById("sum1").innerHTML = "Totalt kr:" + sum1 + ",-"; //Oppdatere pris ved sletting
+    document.getElementById("sum1").innerHTML = "Totalt kr: " + sum1 + ",-"; //Oppdatere pris ved sletting
   }
 }
 //Handlekurv 3
@@ -134,7 +133,7 @@ function calculatePrice2() {
     return (Number(prev) || 0) + (Number(curr) || 0);
   });
 
-  document.getElementById("sum2").innerHTML = "Totalt kr:" + sum2 + ",-"; //Kalkulator legge sammen summene
+  document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop2() {
@@ -157,6 +156,6 @@ function deleteshop2(i) {
       return (Number(prev) || 0) + (Number(curr) || 0);
     });
 
-    document.getElementById("sum2").innerHTML = "Totalt kr:" + sum2 + ",-";
+    document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-";
   }
 }

@@ -7,8 +7,12 @@ body {
   background-color: blue;
 }
 
+p {
+  width: 200px;
+}
+
 h4 {
-  margin-left: 550px;
+  margin-left: 480px;
   display: flex;
   color: white;
   padding: 30px 10px 20px 10px;
@@ -36,56 +40,66 @@ h4 {
 .main-container2 {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 5px;
   background-color: blue;
-  width: 80%;
+  width: 100%;
 }
 
 input {
-  width: 10%;
+  width: 20%;
 }
 
 ul li {
   font-weight: 700;
   display: flex;
-  justify-content: space-around;
-  position: relative;
-  padding: 2px 450px 2px 200px;
+  justify-content: center;
+  padding: 2px 450px 2px 450px;
   list-style-type: none;
   color: white;
   transition: 0.2s;
 }
 
 ul li:hover {
-  background: #ddd;
+  background: lightslategrey;
 }
 
 span {
   float: right;
 }
 
+.list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 button {
+  margin-left: 100px;
   color: #d9d9d9;
 }
 
-.btn1 {
-  background-color: blue;
-  transition-duration: 0.4s;
+.btn {
+  justify-content: center;
+  padding: 2px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
   cursor: pointer;
   border-radius: 0;
 }
 
-.btn1:hover {
+.btn:hover {
   background-color: cornflowerblue;
 }
 
 .btn1 {
-  padding: 2px;
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  width: 10%;
   background: #d9d9d9;
   color: #555;
-  float: left;
-  text-align: center;
   font-size: 16px;
   cursor: pointer;
   border-radius: 0;
