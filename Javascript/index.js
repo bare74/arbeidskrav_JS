@@ -1,4 +1,4 @@
-//alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
+alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
 
 var shopList = document.getElementById("shop-list"); //Handlekurv 1
 var shopList1 = document.getElementById("shop-list1"); //Handlekurv 2
