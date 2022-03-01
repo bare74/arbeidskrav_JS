@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: blue;
+  background-color:lightseagreen;
 }
 
 p {
@@ -12,9 +12,8 @@ p {
 }
 
 h4 {
-  margin-left: 480px;
+  margin-left: 500px;
   display: flex;
-  color: white;
   padding: 30px 10px 20px 10px;
   width: 20%;
   justify-content: center;
@@ -22,15 +21,15 @@ h4 {
 
 .main-txt {
   display: flex;
-  margin-left: 500px;
-  color: white;
+ justify-content: flex-start;
+margin-left: 360px;
+
 }
 .header,
 .header1,
 .header2 {
   display: flex;
-  color: white;
-  background-color: blue;
+  background-color: lightseagreen;
   padding: 25px 25px;
   justify-content: center;
 }
@@ -41,7 +40,7 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 5px;
-  background-color: blue;
+  background-color: lightseagreen;
   width: 100%;
 }
 
@@ -55,7 +54,6 @@ ul li {
   justify-content: center;
   padding: 2px 450px 2px 450px;
   list-style-type: none;
-  color: white;
   transition: 0.2s;
 }
 
@@ -91,7 +89,7 @@ button {
 }
 
 .btn:hover {
-  background-color: cornflowerblue;
+  background-color: seagreen;
 }
 
 .btn1 {
