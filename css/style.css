@@ -3,27 +3,27 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: blue;
 }
 
-h4{
+h4 {
   margin-left: 550px;
   display: flex;
   color: white;
   padding: 30px 10px 20px 10px;
   width: 20%;
   justify-content: center;
- 
 }
 
-.main-txt{
+.main-txt {
   display: flex;
   margin-left: 500px;
   color: white;
 }
 .header,
-.header1, .header2{
+.header1,
+.header2 {
   display: flex;
   color: white;
   background-color: blue;
@@ -33,7 +33,7 @@ h4{
 
 .main-container,
 .main-container1,
-.main-container2{
+.main-container2 {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -54,8 +54,6 @@ input {
   cursor: pointer;
   border-radius: 0;
 }
-
-
 
 ul li {
   margin-left: 200px;
