@@ -21,7 +21,7 @@ function addShopList() {
       price: price,
     });
   }
-  console.log(shopArray);
+  console.log("DETTE ER FØRSTE", shopArray);
   listshop();
   calculatePrice();
 }
@@ -100,6 +100,13 @@ function deleteshop1(i) {
   if (confirm("Ønsker du og slette (vare)?")) {
     shopArray1.splice(i, 1);
     listshop1();
+
+    let priceArray1 = shopArray1.map((product) => product.price);
+    let sum1 = priceArray1.reduce(function (prev, curr) {
+      return (Number(prev) || 0) + (Number(curr) || 0);
+    });
+
+    document.getElementById("sum1").innerHTML = "Totalt kr:" + sum1 + ",-"; //Oppdatere pris ved sletting
   }
 }
 //Handlekurv 3
@@ -143,5 +150,13 @@ function deleteshop2(i) {
   if (confirm("Ønsker du og slette (vare)?")) {
     shopArray2.splice(i, 1);
     listshop2();
+
+    let priceArray2 = shopArray2.map((product) => product.price);
+
+    let sum2 = priceArray2.reduce(function (prev, curr) {
+      return (Number(prev) || 0) + (Number(curr) || 0);
+    });
+
+    document.getElementById("sum2").innerHTML = "Totalt kr:" + sum2 + ",-";
   }
 }
