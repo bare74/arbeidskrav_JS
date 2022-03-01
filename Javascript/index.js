@@ -1,4 +1,4 @@
-alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
+//alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
 
 var shopList = document.getElementById("shop-list"); //Handlekurv 1
 var shopList1 = document.getElementById("shop-list1"); //Handlekurv 2
@@ -21,7 +21,7 @@ function addShopList() {
       price: price,
     });
   }
-
+  console.log(shopArray);
   listshop();
   calculatePrice();
 }
@@ -50,6 +50,13 @@ function deleteshop(i) {
   if (confirm("Ønsker du og slette (vare)?")) {
     shopArray.splice(i, 1);
     listshop();
+
+    let priceArray = shopArray.map((product) => product.price);
+    let sum = priceArray.reduce(function (prev, curr) {
+      return (Number(prev) || 0) + (Number(curr) || 0);
+    });
+
+    document.getElementById("sum").innerHTML = "Totalt kr:" + sum + ",-"; //Oppdatere pris ved sletting
   }
 }
 //Handlekurv 2
