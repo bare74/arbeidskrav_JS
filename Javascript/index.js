@@ -1,16 +1,17 @@
 //alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
 
-var shopList = document.getElementById("shop-list");
-var shopList1 = document.getElementById("shop-list1");
-var shopList2 = document.getElementById("shop-list2");
+var shopList = document.getElementById("shop-list"); //Handlekurv 1
+var shopList1 = document.getElementById("shop-list1"); //Handlekurv 2
+var shopList2 = document.getElementById("shop-list2"); //Handlekurv 3
 
 shopArray = [];
 shopArray1 = [];
 shopArray2 = [];
 
+//Handlekurv 1
 function addShopList() {
-  var shopInput = document.getElementById("input").value;
-  var price = document.getElementById("inputNr").value;
+  var shopInput = document.getElementById("input").value; //input verdi vare
+  var price = document.getElementById("inputNr").value; //input pris på varen
 
   if (price === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
@@ -32,7 +33,7 @@ function calculatePrice() {
   });
 
   console.log(priceArray);
-  document.getElementById("sum").innerHTML = "Totalt kr:" + sum + ",-";
+  document.getElementById("sum").innerHTML = "Totalt kr:" + sum + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop() {
@@ -51,10 +52,10 @@ function deleteshop(i) {
     listshop();
   }
 }
-
+//Handlekurv 2
 function addShopList1() {
-  var shopInput1 = document.getElementById("input1").value;
-  var price1 = document.getElementById("inputNr1").value;
+  var shopInput1 = document.getElementById("input1").value; //input verdi vare
+  var price1 = document.getElementById("inputNr1").value; //input pris på varen
 
   if (price1 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
@@ -71,14 +72,12 @@ function addShopList1() {
 
 function calculatePrice1() {
   let priceArray1 = shopArray1.map((product) => product.price);
-  
 
   let sum1 = priceArray1.reduce(function (prev, curr) {
     return (Number(prev) || 0) + (Number(curr) || 0);
   });
 
-
-  document.getElementById("sum1").innerHTML = "Totalt kr:" + sum1 + ",-";
+  document.getElementById("sum1").innerHTML = "Totalt kr:" + sum1 + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop1() {
@@ -96,10 +95,10 @@ function deleteshop1(i) {
     listshop1();
   }
 }
-
+//Handlekurv 3
 function addShopList2() {
-  var shopInput2 = document.getElementById("input2").value;
-  var price2 = document.getElementById("inputNr2").value;
+  var shopInput2 = document.getElementById("input2").value; //input verdi vare
+  var price2 = document.getElementById("inputNr2").value; //input pris på varen
 
   if (price2 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
@@ -121,7 +120,7 @@ function calculatePrice2() {
     return (Number(prev) || 0) + (Number(curr) || 0);
   });
 
-  document.getElementById("sum2").innerHTML = "Totalt kr:" + sum2 + ",-";
+  document.getElementById("sum2").innerHTML = "Totalt kr:" + sum2 + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop2() {
