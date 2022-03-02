@@ -12,6 +12,8 @@ shopArray2 = [];
 function addShopList() {
   var shopInput = document.getElementById("input").value; //input verdi vare
   var price = document.getElementById("inputNr").value; //input pris på varen
+  document.getElementById("input").value = "";
+  document.getElementById("inputNr").value = "";
 
   if (price === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
@@ -62,6 +64,8 @@ function deleteshop(i) {
 function addShopList1() {
   var shopInput1 = document.getElementById("input1").value; //input verdi vare
   var price1 = document.getElementById("inputNr1").value; //input pris på varen
+  document.getElementById("input").value = "";
+  document.getElementById("inputNr").value = "";
 
   if (price1 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
@@ -112,6 +116,8 @@ function deleteshop1(i) {
 function addShopList2() {
   var shopInput2 = document.getElementById("input2").value; //input verdi vare
   var price2 = document.getElementById("inputNr2").value; //input pris på varen
+  document.getElementById("input").value = "";
+  document.getElementById("inputNr").value = "";
 
   if (price2 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
@@ -156,6 +162,6 @@ function deleteshop2(i) {
       return (Number(prev) || 0) + (Number(curr) || 0);
     });
 
-    document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-";
+    document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-"; //Oppdatere pris ved sletting
   }
 }
