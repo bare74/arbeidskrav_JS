@@ -51,12 +51,15 @@ function deleteshop(i) {
   if (confirm("Ønsker du og slette (vare)?")) {
     shopArray.splice(i, 1);
     document.getElementById("sum").innerHTML = " ";
+
     listshop();
 
     let priceArray = shopArray.map((product) => product.price);
     let sum = priceArray.reduce(function (prev, curr) {
       return (Number(prev) || 0) + (Number(curr) || 0);
+      
     });
+    
 
     document.getElementById("sum").innerHTML = "Sum kr: " + sum + ",-"; //Oppdatere pris ved sletting
   }

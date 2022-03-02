@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color:lightseagreen;
+  background-color: lightseagreen;
 }
 
 p {
@@ -21,9 +21,8 @@ h4 {
 
 .main-txt {
   display: flex;
- justify-content: flex-start;
-margin-left: 360px;
-
+  justify-content: flex-start;
+  margin-left: 360px;
 }
 .header,
 .header1,
@@ -58,7 +57,7 @@ ul li {
 }
 
 ul li:hover {
-  background: lightslategrey;
+  background:white;
 }
 
 span {
