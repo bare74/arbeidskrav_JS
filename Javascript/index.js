@@ -15,7 +15,10 @@ function addShopList() {
   document.getElementById("input").value = "";
   document.getElementById("inputNr").value = "";
 
-  if (price === "0") {
+  if (shopInput === "") {
+    alert("Tast inn et vare navn");
+
+  } else if (price === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
     shopArray.push({
@@ -57,9 +60,7 @@ function deleteshop(i) {
     let priceArray = shopArray.map((product) => product.price);
     let sum = priceArray.reduce(function (prev, curr) {
       return (Number(prev) || 0) + (Number(curr) || 0);
-      
     });
-    
 
     document.getElementById("sum").innerHTML = "Sum kr: " + sum + ",-"; //Oppdatere pris ved sletting
   }
@@ -71,7 +72,9 @@ function addShopList1() {
   document.getElementById("input1").value = "";
   document.getElementById("inputNr1").value = "";
 
-  if (price1 === "0") {
+  if (shopInput1 === "") {
+    alert("Tast inn et vare navn");
+  } else if (price1 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
     shopArray1.push({
@@ -124,7 +127,9 @@ function addShopList2() {
   document.getElementById("input2").value = "";
   document.getElementById("inputNr2").value = "";
 
-  if (price2 === "0") {
+  if (shopInput2 === "") {
+    alert("Tast inn et vare navn");
+  } else if (price2 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
     shopArray2.push({
@@ -171,3 +176,8 @@ function deleteshop2(i) {
     document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-"; //Oppdatere pris ved sletting
   }
 }
+
+
+var arr = [{name: "John", price: "Smith" }];
+arr = [...arr, { firstname: "Name1", lastname: "LName" }];
+console.log(arr);
