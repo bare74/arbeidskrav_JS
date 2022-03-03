@@ -19,6 +19,8 @@ function addShopList() {
     alert("Tast inn et vare navn");
   } else if (price === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
+    } else if (price === "") {
+    alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
     shopArray.push({
       name: shopInput,
@@ -70,6 +72,8 @@ function addShopList1() {
     alert("Tast inn et vare navn");
   } else if (price1 === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
+    } else if (price1 === "") {
+    alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
     shopArray1.push({
       name: shopInput1,
@@ -119,6 +123,8 @@ function addShopList2() {
   if (shopInput2 === "") {
     alert("Tast inn et vare navn");
   } else if (price2 === "0") {
+    alert("Tast inn et beløp fra kr 1,- og oppover");
+     } else if (price2 === "") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
     shopArray2.push({
