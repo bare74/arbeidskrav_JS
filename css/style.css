@@ -11,19 +11,12 @@ p {
   width: 200px;
 }
 
-h4 {
-  margin-left: 500px;
+.sum-text {
   display: flex;
-  padding: 30px 10px 20px 10px;
-  width: 20%;
   justify-content: center;
+  margin-right: 20px;
 }
 
-.main-txt {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 360px;
-}
 .header,
 .header1,
 .header2 {
@@ -52,17 +45,24 @@ input {
   margin-left: 5px;
 }
 
+.brand-name {
+  display: flex;
+  width: 100%;
+}
+
+h3 {
+  margin-left: 350px;
+}
+
 ul li {
-  font-weight: 700;
   display: flex;
   justify-content: center;
-  padding: 2px 450px 2px 450px;
+  padding: 2px 450px 2px 550px;
   list-style-type: none;
-  transition: 0.2s;
 }
 
 ul li:hover {
-  background:white;
+  background: white;
 }
 
 span {
@@ -86,14 +86,13 @@ button {
   padding: 5px;
   outline: none;
   justify-content: center;
-margin-left: 5px;
+  margin-left: 5px;
   width: 10%;
   background: #d9d9d9;
   color: #555;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-
 }
 
 .btn:hover {

@@ -1,4 +1,4 @@
-//alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
+alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
 
 var shopList = document.getElementById("shop-list"); //Handlekurv 1
 var shopList1 = document.getElementById("shop-list1"); //Handlekurv 2
@@ -17,7 +17,6 @@ function addShopList() {
 
   if (shopInput === "") {
     alert("Tast inn et vare navn");
-
   } else if (price === "0") {
     alert("Tast inn et beløp fra kr 1,- og oppover");
   } else {
@@ -32,12 +31,13 @@ function addShopList() {
 }
 
 function calculatePrice() {
-  let priceArray = shopArray.map((product) => product.price);
-  let sum = priceArray.reduce(function (prev, curr) {
-    return (Number(prev) || 0) + (Number(curr) || 0);
+  let priceSum = 0;
+  shopArray.forEach((product) => {
+    priceSum += parseInt(product.price);
   });
 
-  document.getElementById("sum").innerHTML = "Sum kr:" + sum + ",-"; //Kalkulator legge sammen summene
+  console.log(priceSum);
+  document.getElementById("sum").innerHTML = "Sum kr:" + priceSum + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop() {
@@ -56,15 +56,10 @@ function deleteshop(i) {
     document.getElementById("sum").innerHTML = " ";
 
     listshop();
-
-    let priceArray = shopArray.map((product) => product.price);
-    let sum = priceArray.reduce(function (prev, curr) {
-      return (Number(prev) || 0) + (Number(curr) || 0);
-    });
-
-    document.getElementById("sum").innerHTML = "Sum kr: " + sum + ",-"; //Oppdatere pris ved sletting
+    calculatePrice();
   }
 }
+
 //Handlekurv 2
 function addShopList1() {
   var shopInput1 = document.getElementById("input1").value; //input verdi vare
@@ -88,13 +83,14 @@ function addShopList1() {
 }
 
 function calculatePrice1() {
-  let priceArray1 = shopArray1.map((product) => product.price);
-
-  let sum1 = priceArray1.reduce(function (prev, curr) {
-    return (Number(prev) || 0) + (Number(curr) || 0);
+  let priceSum1 = 0;
+  shopArray1.forEach((product) => {
+    priceSum1 += parseInt(product.price);
   });
 
-  document.getElementById("sum1").innerHTML = "Sum kr: " + sum1 + ",-"; //Kalkulator legge sammen summene
+  console.log(priceSum1);
+
+  document.getElementById("sum1").innerHTML = "Sum kr: " + priceSum1 + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop1() {
@@ -109,17 +105,13 @@ function listshop1() {
 function deleteshop1(i) {
   if (confirm("Ønsker du og slette (vare)?")) {
     shopArray1.splice(i, 1);
+
     document.getElementById("sum1").innerHTML = " ";
     listshop1();
-
-    let priceArray1 = shopArray1.map((product) => product.price);
-    let sum1 = priceArray1.reduce(function (prev, curr) {
-      return (Number(prev) || 0) + (Number(curr) || 0);
-    });
-
-    document.getElementById("sum1").innerHTML = "Sum kr: " + sum1 + ",-"; //Oppdatere pris ved sletting
+    calculatePrice1();
   }
 }
+
 //Handlekurv 3
 function addShopList2() {
   var shopInput2 = document.getElementById("input2").value; //input verdi vare
@@ -143,13 +135,14 @@ function addShopList2() {
 }
 
 function calculatePrice2() {
-  let priceArray2 = shopArray2.map((product) => product.price);
-
-  let sum2 = priceArray2.reduce(function (prev, curr) {
-    return (Number(prev) || 0) + (Number(curr) || 0);
+  let priceSum2 = 0;
+  shopArray2.forEach((product) => {
+    priceSum2 += parseInt(product.price);
   });
 
-  document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-"; //Kalkulator legge sammen summene
+  console.log(priceSum2);
+
+  document.getElementById("sum2").innerHTML = "Totalt kr: " + priceSum2 + ",-"; //Kalkulator legge sammen summene
 }
 
 function listshop2() {
@@ -166,18 +159,6 @@ function deleteshop2(i) {
     shopArray2.splice(i, 1);
     document.getElementById("sum2").innerHTML = " ";
     listshop2();
-
-    let priceArray2 = shopArray2.map((product) => product.price);
-
-    let sum2 = priceArray2.reduce(function (prev, curr) {
-      return (Number(prev) || 0) + (Number(curr) || 0);
-    });
-
-    document.getElementById("sum2").innerHTML = "Totalt kr: " + sum2 + ",-"; //Oppdatere pris ved sletting
+    calculatePrice2();
   }
 }
-
-
-var arr = [{name: "John", price: "Smith" }];
-arr = [...arr, { firstname: "Name1", lastname: "LName" }];
-console.log(arr);
