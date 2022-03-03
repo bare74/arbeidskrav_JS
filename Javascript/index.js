@@ -36,8 +36,7 @@ function calculatePrice() {
     priceSum += parseInt(product.price);
   });
 
-  console.log(priceSum);
-  document.getElementById("sum").innerHTML = "Sum kr:" + priceSum + ",-"; //Kalkulator legge sammen summene
+  document.getElementById("sum").innerHTML = "Sum kr:" + priceSum + ",-"; //legge sammen summene
 }
 
 function listshop() {
@@ -88,9 +87,7 @@ function calculatePrice1() {
     priceSum1 += parseInt(product.price);
   });
 
-  console.log(priceSum1);
-
-  document.getElementById("sum1").innerHTML = "Sum kr: " + priceSum1 + ",-"; //Kalkulator legge sammen summene
+  document.getElementById("sum1").innerHTML = "Sum kr: " + priceSum1 + ",-"; //legge sammen summene
 }
 
 function listshop1() {
@@ -140,9 +137,7 @@ function calculatePrice2() {
     priceSum2 += parseInt(product.price);
   });
 
-  console.log(priceSum2);
-
-  document.getElementById("sum2").innerHTML = "Totalt kr: " + priceSum2 + ",-"; //Kalkulator legge sammen summene
+  document.getElementById("sum2").innerHTML = "Totalt kr: " + priceSum2 + ",-"; //legge sammen summene
 }
 
 function listshop2() {
