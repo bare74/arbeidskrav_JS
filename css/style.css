@@ -7,16 +7,6 @@ body {
   background-color: lightseagreen;
 }
 
-p {
-  width: 200px;
-}
-
-.sum-text {
-  display: flex;
-  justify-content: center;
-  margin-right: 20px;
-}
-
 .header,
 .header1,
 .header2 {
@@ -46,37 +36,37 @@ input {
 }
 
 .brand-name {
+  margin-left: 23%;
   display: flex;
+  padding: 5px;
   width: 100%;
 }
 
-h3 {
-  margin-left: 350px;
+.sum-text {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
 }
 
 ul li {
   display: flex;
-  justify-content: center;
-  padding: 2px 450px 2px 550px;
+  width: 55%;
   list-style-type: none;
+  justify-content: space-evenly;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 450px;
 }
 
 ul li:hover {
-  background: white;
+  background: whitesmoke;
 }
 
 span {
   float: right;
 }
 
-.list {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 button {
-  margin-left: 100px;
   color: #d9d9d9;
 }
 
@@ -102,7 +92,7 @@ button {
 .btn1 {
   display: flex;
   justify-content: center;
-  width: 10%;
+  width: 5%;
   background: #d9d9d9;
   color: #555;
   font-size: 16px;
