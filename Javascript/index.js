@@ -47,7 +47,7 @@ function listshop() {
     shopList.innerHTML += `<li><p>${shopArray[i].name}</p>
     <p>Kr: ${shopArray[i].price},-</p>
 
-<button id="delete-btn" class="btn1" onclick = "deleteshop(${i})">\u00D7</button></li>`;
+<button class="btn1" onclick = "deleteshop(${i})">\u00D7</button></li>`;
   }
 }
 
@@ -99,7 +99,8 @@ function listshop1() {
   for (let i = 0; i < shopArray1.length; i++) {
     shopList1.innerHTML += `<li><p>${shopArray1[i].name}</p>
      <p>Kr: ${shopArray1[i].price},-</p>
-<button id="delete-btn" class="btn1" onclick = "deleteshop1(${i})">\u00D7</button></li>`;
+     
+<button class="btn1" onclick = "deleteshop(${i})">\u00D7</button></li>`;
   }
 }
 
@@ -151,7 +152,7 @@ function listshop2() {
   for (let i = 0; i < shopArray2.length; i++) {
     shopList2.innerHTML += `<li><p>${shopArray2[i].name}</p>
      <p>Kr: ${shopArray2[i].price},-</p>
-<button id="delete-btn" class="btn1" onclick = "deleteshop2(${i})">\u00D7</button></li>`;
+<button class="btn1" onclick = "deleteshop2(${i})">\u00D7</button></li>`;
   }
 }
 
