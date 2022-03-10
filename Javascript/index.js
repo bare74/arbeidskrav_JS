@@ -1,4 +1,4 @@
-alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
+//alert("Velkommen til din handleliste. Legg inn varer du ønsker og pris");
 
 var shopList = document.getElementById("shop-list"); //Handlekurv 1
 var shopList1 = document.getElementById("shop-list1"); //Handlekurv 2
@@ -99,8 +99,8 @@ function listshop1() {
   for (let i = 0; i < shopArray1.length; i++) {
     shopList1.innerHTML += `<li><p>${shopArray1[i].name}</p>
      <p>Kr: ${shopArray1[i].price},-</p>
-     
-<button class="btn1" onclick = "deleteshop(${i})">\u00D7</button></li>`;
+
+<button class="btn1" onclick = "deleteshop1(${i})">\u00D7</button></li>`;
   }
 }
 
